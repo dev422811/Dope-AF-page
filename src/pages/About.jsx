@@ -1,0 +1,41 @@
+import React from "react";
+import { motion } from "framer-motion";
+import Navbar from "../components/Navbar";
+import Footer from "../components/Footer";
+import StackedTeamCarousel from "../components/StackedTeamCarousel";
+
+const About = () => {
+  const team = [
+    { image: "https://via.placeholder.com/400x300", text: "Charan Satya Dev" },
+    { image: "https://via.placeholder.com/400x300", text: "Founder 1" },
+    { image: "https://via.placeholder.com/400x300", text: "Co-Founder 2" },
+    { image: "https://via.placeholder.com/400x300", text: "Operations Head" },
+    { image: "https://via.placeholder.com/400x300", text: "Creative Lead" },
+    { image: "https://via.placeholder.com/400x300", text: "Brand Strategist" },
+  ];
+
+  return (
+    <div className="bg-white text-[#E9762B] min-h-screen">
+      <Navbar />
+      <motion.section
+        className="py-12 px-6 text-center"
+        initial={{ opacity: 0, y: 30 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.6 }}
+      >
+        <h2 className="text-4xl font-bold mb-4">About Us</h2>
+        <p className="max-w-2xl mx-auto text-lg text-[#E9762B]/80 mb-12">
+          Dopeaf is a passionate in-house jewelry brand creating one-of-a-kind pieces
+          that tell stories. We believe in quality, elegance, and authenticity.
+        </p>
+
+        <div className="flex justify-center">
+          <StackedTeamCarousel items={team} />
+        </div>
+      </motion.section>
+      <Footer />
+    </div>
+  );
+};
+
+export default About;
