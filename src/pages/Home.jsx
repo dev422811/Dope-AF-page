@@ -1,17 +1,22 @@
 import React from "react";
-import Navbar from "../components/Navbar";
+import { motion } from "framer-motion";
 import Header from "../components/Header";
 import GradientText from "../components/GradientText";
 import Hero from "../components/Hero";
-import Footer from "../components/Footer";
 
 const Home = () => {
   return (
-    <div className="bg-#A9C46C text-[#a0522d] min-h-screen">
-      <Navbar />
+    <motion.div
+      className="bg-#A9C46C text-[#a0522d] min-h-screen"
+      initial={{ opacity: 0, y: 30 }}
+      animate={{ opacity: 1, y: 0 }}
+      exit={{ opacity: 0, y: -30 }}
+      transition={{ duration: 0.6 }}
+    >
+      {/* Removed Navbar and Footer */}
       <Header />
 
-      {/* Home title section FIRST */}
+      {/* Home title section */}
       <section className="py-12 px-6 text-center">
         <h2 className="text-4xl font-bold mb-4">
           <GradientText>Exquisite Handcrafted Jewelry</GradientText>
@@ -22,11 +27,9 @@ const Home = () => {
         </p>
       </section>
 
-      {/* Hero section SECOND */}
+      {/* Hero section */}
       <Hero />
-
-      <Footer />
-    </div>
+    </motion.div>
   );
 };
 

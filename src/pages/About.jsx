@@ -6,7 +6,7 @@ import StackedTeamCarousel from "../components/StackedTeamCarousel";
 
 const About = () => {
   const team = [
-    { image: "https://via.placeholder.com/400x300", text: "Charan Satya Dev" },
+    { image: "https://via.placeholder.com/400x300", text: "vyshnavi" },
     { image: "https://via.placeholder.com/400x300", text: "Founder 1" },
     { image: "https://via.placeholder.com/400x300", text: "Co-Founder 2" },
     { image: "https://via.placeholder.com/400x300", text: "Operations Head" },
@@ -15,13 +15,19 @@ const About = () => {
   ];
 
   return (
-    <div className="bg-white text-[#E9762B] min-h-screen">
+    <motion.div
+      className="bg-white text-[#E9762B] min-h-screen"
+      initial={{ opacity: 0, y: 30 }}
+      animate={{ opacity: 1, y: 0 }}
+      exit={{ opacity: 0, y: -30 }}
+      transition={{ duration: 0.6 }}
+    >
       <Navbar />
       <motion.section
         className="py-12 px-6 text-center"
-        initial={{ opacity: 0, y: 30 }}
-        animate={{ opacity: 1, y: 0 }}
-        transition={{ duration: 0.6 }}
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1 }}
+        transition={{ delay: 0.2, duration: 0.6 }}
       >
         <h2 className="text-4xl font-bold mb-4">About Us</h2>
         <p className="max-w-2xl mx-auto text-lg text-[#E9762B]/80 mb-12">
@@ -34,7 +40,7 @@ const About = () => {
         </div>
       </motion.section>
       <Footer />
-    </div>
+    </motion.div>
   );
 };
 
