@@ -1,29 +1,23 @@
-import React, { Suspense, lazy } from "react";
-import ReactDOM from "react-dom/client";
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import "./index.css";
+// App.jsx
+import { Routes, Route, useLocation } from 'react-router-dom';
+import { AnimatePresence } from 'framer-motion';
+import Home from './pages/Home';
+import Navbar from './components/Navbar';
 
-// Lazy load pages
-const Home = lazy(() => import("./pages/Home"));
-const Gallery = lazy(() => import("./pages/Gallery"));
-const About = lazy(() => import("./pages/About"));
-const Contact = lazy(() => import("./pages/Contact"));
+const App = () => {
+  const location = useLocation();
 
-const App = () => (
-  <Router>
-    <Suspense fallback={<div className="text-center p-10">Loading...</div>}>
-      <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/gallery" element={<Gallery />} />
-        <Route path="/about" element={<About />} />
-        <Route path="/contact" element={<Contact />} />
-      </Routes>
-    </Suspense>
-  </Router>
-);
+  return (
+    <>
+      <Navbar />
+      <AnimatePresence mode="wait">
+        <Routes location={location} key={location.pathname}>
+          <Route path="/" element={<Home />} />
+          {/* Add other routes */}
+        </Routes>
+      </AnimatePresence>
+    </>
+  );
+};
 
-ReactDOM.createRoot(document.getElementById("root")).render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>
-);
+export default App;
