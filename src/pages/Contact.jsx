@@ -1,14 +1,10 @@
 import React from "react";
 import { motion } from "framer-motion";
-import Navbar from "../components/Navbar";
-import Footer from "../components/Footer";
-import InstaIcon from "../assets/instagram.png"; // adjust path if needed
+import InstaIcon from "../assets/instagram.png"; // make sure this path is correct
 
 const Contact = () => {
   return (
     <div className="bg-white text-[#E9762B] min-h-screen">
-      <Navbar />
-
       <motion.section
         className="py-12 px-6 text-center"
         initial={{ opacity: 0, y: 30 }}
@@ -63,8 +59,6 @@ const Contact = () => {
           </a>
         </div>
       </motion.section>
-
-      <Footer />
     </div>
   );
 };
