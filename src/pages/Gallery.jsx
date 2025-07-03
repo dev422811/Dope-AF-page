@@ -1,13 +1,10 @@
 import React from "react";
 import { motion } from "framer-motion";
-import Navbar from "../components/Navbar";
 import Masonry from "../components/Masonry";
-import Footer from "../components/Footer";
 
 const Gallery = () => {
   return (
     <div className="bg-white text-[#E9762B] min-h-screen">
-      <Navbar />
       <motion.section
         className="py-12 px-6 text-center"
         initial={{ opacity: 0, y: 30 }}
@@ -20,7 +17,6 @@ const Gallery = () => {
         </p>
         <Masonry />
       </motion.section>
-      <Footer />
     </div>
   );
 };
