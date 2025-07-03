@@ -1,7 +1,5 @@
 import React from "react";
 import { motion } from "framer-motion";
-import Navbar from "../components/Navbar";
-import Footer from "../components/Footer";
 import StackedTeamCarousel from "../components/StackedTeamCarousel";
 
 const About = () => {
@@ -22,7 +20,6 @@ const About = () => {
       exit={{ opacity: 0, y: -30 }}
       transition={{ duration: 0.6 }}
     >
-      <Navbar />
       <motion.section
         className="py-12 px-6 text-center"
         initial={{ opacity: 0 }}
@@ -39,7 +36,6 @@ const About = () => {
           <StackedTeamCarousel items={team} />
         </div>
       </motion.section>
-      <Footer />
     </motion.div>
   );
 };
