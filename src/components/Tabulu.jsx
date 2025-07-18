@@ -22,19 +22,19 @@ const onChange = (key) => {
 
 /* Product data (filenames only; resolved at render) */
 const productGrid = [
-  { src: 'bracelet_1.jpeg', name: 'Diamond Ring', price: '₹12,000', instagram: 'https://www.instagram.com/p/DKMq7O2PFmc/?img_index=1' },
-  { src: 'bracelet_2.jpeg', name: 'Gold Ring',    price: '₹9,500',  instagram: 'https://www.instagram.com/p/DJo4IZavFV3/' },
-  { src: 'bracelet_3.jpeg', name: 'Gold Ring',    price: '₹9,500',  instagram: 'https://www.instagram.com/p/DKMqiwnvDBa/?img_index=1' },
-  { src: 'bracelet_4.jpeg', name: 'Gold Ring',    price: '₹9,500',  instagram: 'https://www.instagram.com/p/DKMiKSbvXey/?img_index=1' },
-  { src: 'bracelet_5.jpeg', name: 'Gold Ring',    price: '₹9,500',  instagram: 'https://www.instagram.com/p/DJpJBqPvpCX/' },
-  { src: 'bracelet_6.jpeg', name: 'Pearl Necklace',   price: '₹25,000', instagram: 'https://www.instagram.com/p/DKMep3nPwtb/?img_index=1' },
-  { src: 'bracelet_7.jpeg', name: 'Silver Necklace',  price: '₹15,800', instagram: 'https://www.instagram.com/p/DJo32M2vQS1/' },
-  { src: 'necklace_1.jpeg', name: 'Silver Necklace',  price: '₹15,800', instagram: 'https://www.instagram.com/p/DJg77tcv2XZ/?img_index=1' },
-  { src: 'necklace_2.jpeg', name: 'Silver Necklace',  price: '₹15,800', instagram: 'https://www.instagram.com/p/DJhMtuFvKOo/?img_index=1' },
-  { src: 'necklace_3.jpeg', name: 'Silver Necklace',  price: '₹15,800', instagram: 'https://www.instagram.com/p/DIEbpspP-tn/?img_index=1' },
-  { src: 'necklace_4.jpeg', name: 'Silver Necklace',  price: '₹15,800', instagram: 'https://www.instagram.com/p/DIEavozPxJI/?img_index=1' },
-  { src: 'necklace_5.jpeg', name: 'Silver Necklace',  price: '₹15,800', instagram: 'https://www.instagram.com/p/DJg77tcv2XZ/?img_index=2' },
-  { src: 'necklace_6.jpeg', name: 'Silver Necklace',  price: '₹15,800', instagram: 'https://www.instagram.com/p/DIEcScbv72f/?img_index=1' },
+  { src: 'bracelet_1.jpeg', name: 'Bamboo Bracelet', price: '₹349', instagram: 'https://www.instagram.com/p/DKMq7O2PFmc/?img_index=1' },
+  { src: 'bracelet_2.jpeg', name: 'Tennis Bracelet',    price: '₹499',  instagram: 'https://www.instagram.com/p/DJo4IZavFV3/' },
+  { src: 'bracelet_3.jpeg', name: 'Cartier Bracelet',    price: '₹299',  instagram: 'https://www.instagram.com/p/DKMqiwnvDBa/?img_index=1' },
+  { src: 'bracelet_4.jpeg', name: 'Nail Bracelet Stack',    price: '₹599',  instagram: 'https://www.instagram.com/p/DKMiKSbvXey/?img_index=1' },
+  { src: 'bracelet_5.jpeg', name: 'Red Clover Bracelet',    price: '₹349',  instagram: 'https://www.instagram.com/p/DJpJBqPvpCX/' },
+  { src: 'bracelet_6.jpeg', name: 'Nail Bracelet',   price: '₹299', instagram: 'https://www.instagram.com/p/DKMep3nPwtb/?img_index=1' },
+  { src: 'bracelet_7.jpeg', name: 'Evil Eye Bracelet',  price: '₹499', instagram: 'https://www.instagram.com/p/DJo32M2vQS1/' },
+  { src: 'necklace_1.jpeg', name: 'Rhinestone Drop Necklace',  price: '₹299', instagram: 'https://www.instagram.com/p/DJg77tcv2XZ/?img_index=1' },
+  { src: 'necklace_2.jpeg', name: 'Shell Charm Necklace',  price: '₹499', instagram: 'https://www.instagram.com/p/DJhMtuFvKOo/?img_index=1' },
+  { src: 'necklace_3.jpeg', name: 'Snake Chain',  price: '₹299', instagram: 'https://www.instagram.com/p/DIEbpspP-tn/?img_index=1' },
+  { src: 'necklace_4.jpeg', name: 'Love Pendant Chain',  price: '₹299', instagram: 'https://www.instagram.com/p/DIEavozPxJI/?img_index=1' },
+  { src: 'necklace_5.jpeg', name: 'Green Stone Chain',  price: '₹349', instagram: 'https://www.instagram.com/p/DJg77tcv2XZ/?img_index=2' },
+  { src: 'necklace_6.jpeg', name: 'Peal Charm Chain',  price: '₹349', instagram: 'https://www.instagram.com/p/DIEcScbv72f/?img_index=1' },
 ];
 
 /* Product card */
