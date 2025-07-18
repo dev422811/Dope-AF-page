@@ -19,7 +19,7 @@ const Home = () => {
       {/* Home title section */}
       <section className="py-12 px-6 text-center">
         <h2 className="text-4xl font-bold mb-4">
-          <GradientText>Exquisite Handcrafted Jewelry</GradientText>
+          <GradientText>Exquisite Jewelry</GradientText>
         </h2>
         <p className="max-w-2xl mx-auto text-lg text-[#a0522d]/80">
           Welcome to Dopeaf — your destination for premium, curated jewelry collections.
