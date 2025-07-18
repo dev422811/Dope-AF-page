@@ -8,6 +8,8 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "@ant-design/icons": "^6.0.0",
+    "antd": "^5.26.5",
     "framer-motion": "^12.23.0",
     "gsap": "^3.13.0",
     "lucide-react": "^0.525.0",
