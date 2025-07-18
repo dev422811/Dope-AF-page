@@ -7,7 +7,7 @@ const Footer = () => (
 
     {/* Right: Copyright */}
     <div className="text-right">
-      © {new Date().getFullYear()} Dope AF — Handcrafted with ❤️
+      © {new Date().getFullYear()} Dope AF — Brought to you with ❤️
     </div>
   </footer>
 );
