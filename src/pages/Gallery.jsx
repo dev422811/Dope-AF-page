@@ -1,6 +1,7 @@
 import React from "react";
 import { motion } from "framer-motion";
-import Masonry from "../components/Masonry";
+import { Tabs } from "antd";
+import Tabulu from "../components/Tabulu";
 
 const Gallery = () => {
   return (
@@ -11,11 +12,14 @@ const Gallery = () => {
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.6 }}
       >
-        <h2 className="text-4xl font-bold mb-4">Gallery</h2>
-        <p className="max-w-xl mx-auto text-lg text-[#E9762B]/80 mb-10">
-          Explore our collection through a dynamic masonry layout.
+      <div className="flex flex-col md:flex-row items-center justify-between gap-4 mb-10 px-20">
+        <h2 className="text-4xl font-bold">Gallery</h2>
+        <p className="text-lg text-[#E9762B]/80 max-w-xl">
+        Explore our collection through a dynamic layout.
         </p>
-        <Masonry />
+      </div>
+
+        <Tabulu />
       </motion.section>
     </div>
   );

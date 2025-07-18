@@ -22,9 +22,8 @@ const Home = () => {
           <GradientText>Exquisite Handcrafted Jewelry</GradientText>
         </h2>
         <p className="max-w-2xl mx-auto text-lg text-[#a0522d]/80">
-          Welcome to Dopeaf, your go-to destination for unique handcrafted jewelry pieces.
-          Explore our stunning collection inspired by elegance and designed with love.
-        </p>
+          Welcome to Dopeaf — your destination for premium, curated jewelry collections.
+          We specialize in quality designs that combine elegance with a modern edge, crafted for those who demand excellence in every detail. </p>
       </section>
 
       {/* Hero section */}

@@ -1,0 +1,26 @@
+.action-btn {
+  padding: 0.5rem 1rem;
+  font-weight: 500;
+  border-radius: 9999px;
+  transition: background-color 0.3s ease;
+  text-decoration: none;
+  font-size: 0.875rem;
+}
+
+.action-btn.insta {
+  background-color: #f09433;
+  color: white;
+}
+
+.action-btn.insta:hover {
+  background-color: #bc2a8d;
+}
+
+.action-btn.whatsapp {
+  background-color: #25D366;
+  color: white;
+}
+
+.action-btn.whatsapp:hover {
+  background-color: #128C7E;
+}

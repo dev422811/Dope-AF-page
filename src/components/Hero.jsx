@@ -18,8 +18,8 @@ const Hero = () => {
       image: land2,
     },
     {
-      title: "Custom Orders",
-      description: "Tailored just for you.",
+      title: "Anti-Tarnish",
+      description: "Tailored just for your needs and daily wear.",
       image: land3,
     },
   ];
@@ -53,7 +53,7 @@ const Hero = () => {
           animate={{ opacity: 1 }}
           transition={{ delay: 0.4, duration: 0.6 }}
         >
-          Discover handcrafted jewelry that speaks to your soul. Designed with passion and curated for timeless style.
+          Discover jewelry that speaks to your soul. Designed with passion and curated for timeless style.
         </motion.p>
       </div>
 
