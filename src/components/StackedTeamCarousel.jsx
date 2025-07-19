@@ -1,13 +1,11 @@
 import React, { useState, useEffect } from "react";
 import team1 from "../assets/team1.jpg";
 import team2 from "../assets/team2.jpg";
-import team3 from "../assets/team3.jpg";
 import { ChevronLeft, ChevronRight } from "lucide-react";
 
 const images = [
-  { src: team1, name: "Brand Ambassador" },
+  { src: team1, name: "Creative Head" },
   { src: team2, name: "Founders" },
-  { src: team3, name: "Creative Head" },
 ];
 
 const StackedTeamCarousel = () => {
