@@ -4,8 +4,8 @@ import team2 from "../assets/team2.jpg";
 import { ChevronLeft, ChevronRight } from "lucide-react";
 
 const images = [
-  { src: team1, name: "Creative Head" },
-  { src: team2, name: "Founders" },
+  { src: team1, name: "Vyshnavi Saya" },
+  { src: team2, name: "Rishitha Saya" },
 ];
 
 const StackedTeamCarousel = () => {
